@@ -1,0 +1,12 @@
+FILES = main.cpp
+
+COMPILER = g++
+
+COMPILER_FLAGS = 
+
+LINKER_FLAGS = -lSDL2 -lSDL2_image
+
+EXEC = main
+
+all : $(FILES)
+	$(COMPILER) $(FILES) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(EXEC)
